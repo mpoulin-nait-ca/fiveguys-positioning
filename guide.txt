@@ -1,0 +1,34 @@
+give students the initial commit so you don't spend time on basic html. Is this the only way to do the html. Of course not.
+
+Lets start with putting the banner image in and centering the text so that when we do the header scroll position thingy we can easily see it go behind the header.
+
+We already have a class of banner but you'll notice no img tag. This is because the easiest way to put text infront of a picture is to use css and background-image properties.
+
+When you add the image and look at the browser you will see a small strip of red.
+
+Q. How do we get this to work properly?
+A. Remember a background image cannot force it's size on the container it's in. Even if the image is 600px high, the box it's in doesn't know that. It gets the size from the content or css.
+
+We aren't going to do what they did because they used positioning on top of an img tag.
+
+To allow for the image to grow and shrink and not use positioning we will use padding as a percentage.
+
+We see some of the food and I can see fries twice. We need to tell it to cover the screen. change it's size
+
+Better but I can't see much of the burger - just fries and shake. Lets tell it to focus on the bottom of the image and really it's the bottom center that's important. change it's position.
+
+pretty good.
+
+lets do this scroll behind the header
+
+oh my position fixed did good and bad stuff. It doesn't go across the screen any more - add left 0; right 0; and now it's across the screen.
+
+next issue is that the banner it partially hiding behind the nav - don't forget fixed and absolute make it invisible to its the siblings.
+
+Lets add some more padding to the top - we want the 15% but we want the extra 80px
+
+to make sure the header is on top add zindex
+
+- students can do text text part themselves even tho I'm showing it in the css. instead of doing banner > * a box for the content could be used
+
+to make the first three sections side by side lets add a box to it and give it class

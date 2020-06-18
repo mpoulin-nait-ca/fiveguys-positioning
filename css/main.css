@@ -1,0 +1,78 @@
+html { font-family: Arial, sans-serif;}
+body, h1 { margin: 0; }
+ul { list-style-type: none; padding-left: 0; margin: 0; }
+a { text-decoration: none; color: black; }
+
+header { display: flex;  background-color: white; height: 80px; padding: 0 30px;  align-items: center;}
+
+header > * { display: flex; flex: 1;}
+header > ul { justify-content: flex-end;}
+
+.banner
+{
+  background-image: url(../img/banner.jpg);
+  padding: 15% 0;
+  background-size: cover;
+  background-position: bottom center;
+  color: white;
+}
+
+/* now we should see the image   */
+
+
+header
+{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.banner {
+  padding-top: calc(15% + 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner > * { max-width: 500px;}
+
+
+/*  now onto the main content area */
+
+main{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main { text-align: center; }
+
+.row { display: flex; justify-content: space-around; width: 100%;}
+.smaller{width: 69%;}
+.wrap { display: flex; flex-wrap: wrap; justify-content: center; }
+.wrap li { margin: 10px; }
+.wrap a { padding-right: 10px;}
+.separators li:after {
+  content: '\2022';
+}
+
+.separators li:last-child::after {
+  content: ' ';
+}
+
+
+
+.red-bkg{
+  background-color: #cf1e27;
+  padding: 30px 0;
+  text-align: center;
+}
+.red-bkg a
+{
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 3px solid white;
+}
